@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CCS CheatSheet</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Golden State UI Course 2020 <br>CSS CheatSheet</header>
+    <main>
+        <p>This page lists key information on CSS from Golden State 2020 UI Class. See <a href="HTML.html" target="_blank"> HTML page</a> for information on HTML.</p>
+        <!--Styling-->
+        <div>
+            <h2>Styling</h2>
+            <p>Styling is used to change the formatting of an HTML element. CSS syntax consists of the following:</p>
+            <ul class="indent"><li>Selector</li><li>Property</li><li>Value</li><li>Declaration</li></ul>
+        </div>
+        <!--CSS Properties Table-->
+        <h2>CSS Properties</h2>
+        <p>CSS properties are used to style the HTML element</p>
+        <table>
+            <tr>
+                <th>CSS Properties</th><th>Description</th><th>Code</th>
+            </tr>
+            <tr>
+                <td>Comment</td>
+                <td>Allows to write comment in css doc without it showing up on the page</td>
+                <td>/* comment */</td>
+            </tr>
+            <tr>
+                <td>background-image</td>
+                <td>Puts image in the background of an element or text section</td>
+                <td>{background-image: url("image link");}</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Changes color of the text</td>
+                <td style="color: red;">{color: red;}</td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>Sets a background color to an HTML element (e.g. table)</td>
+                <td>table {background-color: white;}</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>Changes font of the text. If font contains two words, the name must be enclosed in <strong>double-quotes</strong> (e.g. "Courier New").</td>
+                <td>{font-family: Garamond;}</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>Makes text <strong>bold, normal and light</strong>. Can also use 100 values from 100-900 to specify weight of text where 400 is default, 700 is bold and 300 is light.<br>NOTE: not all fonts can be modified with font-weight.</td>
+                <td>{font-weight: bold;}</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>Used to make test italic.</td>
+                <td>{font-style: italic;}</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/css/css_link.asp" target="_blank">Styling Links</a></td>
+                <td>Can style "a" selector same way as text and also based on one of four states (e.g. a:active, etc). <strong>text-decoration</strong> property is used to remove underline from link with "none" value. "Underline" can be used to add underline if needed. </td>
+                <td>a {text-decoration: none;}</td>
+            </tr>
+            <tr>
+                <td>word-spacing <br>letter-spacing</td>
+                <td>Increases spacing between words and letters respectively. Default space is 0.25em. </td>
+                <td>{word-spacing: 0.5em;}<br>{letter-spacing: 0.5em;}</td>
+            </tr>
+            <tr>
+                <td>text-transform</td>
+                <td>Allows text to be formatted with <strong>uppercase, lowercase, capitalize, or none, initial, inherit</strong> <a href="https://www.w3schools.com/cssref/pr_text_text-transform.asp" target="_blank">values</a></td>
+                <td>{text-transform: uppercase;}</td>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td>Aligns text as follows: left, center, right</td>
+                <td>{text-align: center;}</td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>Increases line height. Recommended that use unitless # (e.g. 1.2) vs unit number (e.g. 12px) because it is responsive.</td>
+                <td>{line-height: 1.4;}</td>
+            </tr>
+            <tr>
+                <td>opacity</td>
+                <td>Changes opacity of the text. Values range from 0 (not visible) to 1 (fully visible)</td>
+                <td>{opacity: 0.5;}</td>
+
+            </tr>
+            <tr>
+                <td>visibility</td>
+                <td>Used to hide the content of an element (space is still used up)</td>
+                <td>{visibility: hidden;}</td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td>Used to make an element invisible (i.e. element is completely removed from the page)</td>
+                <td>{display: none;}</td>
+            </tr>
+            <tr>
+                <td>border-collapse</td>
+                <td>Allows to collapse borders around the table and cells into one.</td>
+                <td>{border-collapse: collapse;}</td>
+            </tr>
+            
+        </table>
+        <h2>Combining Selectors</h2>
+        <p>Combining element and class will apply style to the element with that class: <span class="code">h1.class</span></p>
+        <p>Adding element after class will apply style to child elements after the class???(e.g. <strong>.class li</strong>).</p>
+        <p>To select elements within  elements use <span class="code">h1 strong</span> syntax</p>
+        <p>You can also use <a href="https://stackoverflow.com/questions/11918491/using-two-css-classes-on-one-element" target="_blank">multiple CSS classes</a> on one HTML element as follows:</p>
+        <ol class="indent"><li>HTML: <span class="code">[h1 class="class1 class2"][/h1]</span></li><li>CSS: .class1 .class 2 {}</li></ol>
+       
+    <!--Colors-->
+        <h2>Colors</h2>
+        <p>Color property can be set with one of the following options:</p>
+        <ul class="indent">
+            <li>HEX: {color: #006400;}</li>
+            <li>RGB: {color: rgb(230, 45, 23);}</li>
+            <li>HSL: {color: hsl(120, 60%, 70%);}</li>
+        </ul>
+        <p>See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">this link</a> for a list of common color examples. Note, hexacedimals where pair numbers are the same can be shortened to 3 digit number (e.g. <span style="color: #0FF">Aqua</span> can be coded as #00FFFF or #0FF)</p>
+        <p>HSL stands for Hue-saturation-lightness. Value of hue is between 0 and 360, whereas saturation and lightness are percentages (e.g. color: hsl(120, 60%, 70%);). HSL is conveneint for adjusting colors.</p>
+        <p>To change opacity, use <strong>HSLA or RGBA</strong> color scheme where "a" is the opacity value from 0 to 1. For zero opacity, can use "transparent" keyword for the color property (i.e. color: transparent;).</p>
+    <!--Fonts-->
+        <h2>Fonts</h2>
+        <p>Fonts fall into 2 categories: Serif and San-Serif (with and without markings respectively). <strong>Fallback fonts</strong> are used when specified font may not be available on the computer. The following syntax is required:</p>
+        <br>
+        <p>{font-family: ""Garamond", "Times", serif;}</p>
+        <br>
+        <p>The fallback syntax indicates that Garamond should be used first followed by Times if Garamond is not available and by any serif font if niether Times nor Garamond is available. Note that font names must be in double-quotes but serif does not need to be.</p>
+        <p>It is also possible to <strong>link font</strong> that is likely not installed on the computer to <strong>Google Fonts directory</strong> at <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>. Link to selected font is embedded in the header of the HTML document using <strong> href, family, type and rel</strong>attributes. Multiple families can be included using <strong>family=Droid+Serif|Playfair+Display</strong> designation.</p>
+        <p>Another way to link a font is through <strong>Font-Face</strong> CSS property. Put google link into browser, copy each "latin" font and paste into CSS file at the <strong>top</strong> of the stylesheet. You can also modify @font-face property to use local font files as follows: @font-face {
+            font-family: "Glegoo"; 
+              src: url("../fonts/Glegoo-Regular.ttf") format('truetype');
+            } </p>
+    
+    <!--The Box Model-->
+    <div id="box-model">
+        <h2>The Box Model</h2>
+        <p><a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/diagram-boxmodel.svg" target="_blank">The Box Model</a> is a set of properties that define part of element that take up space on the page. The Box Model consists of the following properties:</p>
+        <ul class="indent">
+            <li><span class="property">Width & height</span> specifies width + height of the content area; measured in px or % (e.g. 600px or 100%)</li>
+            <li><span class="property">Padding</span> specifies space between content and border; apply using <strong>padding</strong> property or <strong>padding-top, padding-right, padding-left, padding-bottom</strong> if want unequal sides (e.g. 10px) OR padding: 13px 11px 15px 6px property starting with top and ending with left OR shortcut padding: 10px 5px if top/bottom and right/left are equal. </li>
+            <li><span class="property">Border</span> specifies thickness and style of border around the content; border is set with specific width, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values" target="_blank">style</a> and color (e.g.{border: 3px solid coral;}). Can also set border shape with <strong>border-radius</strong> (e.g. 5px or 100%) property.</li>
+            <li><span class="property">Margin</span> specifies amount of space between the border and outside edge of the element (i.e. how much space will be between one element and other elements). Same syntax as padding is used for margins including abbreviations. To center content on a page <strong>margin: 0 auto;</strong> declaration can be used in combination with width property. NOTE: top/bottom or vertial margins between elements collapse so that the margin of the bigger element become the entire margin between the 2 elements.</li>
+        </ul>
+        <p><strong>max-width, min-width, max-height, min-height</strong> are used to set minimum and maximum sizes for elements when a webpage is expanded or contracted. <strong>Overflow</strong> property is used to prevent text overflow if height/width of the element are too small for the content. The property is set at parent level and the values are as follows:</p>
+        <ul class="indent">
+            <li>hidden: overflow content is not visible</li>
+            <li>scroll: scrollbar is added to the content</li>
+            <li>visible: default value; content is visible outside the element</li>
+        </ul>
+        <p>Many browsers have default values for margin and padding which limits styling. Use <strong>* {margin: 0; padding: 0;}</strong> code to reset these defaults. </p>
+        <p><span class="property">Box-sizing</span> property controls default box size model browser will use. The values are as follows:</p>
+        <ul class="indent">
+            <li><strong>content-box</strong>: default value; affected by border thickness and padding</li>
+            <li><strong>border-box</strong>: resets box model on HTML page to a type that does not have sizing issues. Use *{box-sizing: border-box;} code at the beginning of the CSS styling page.</li>
+
+        </ul>
+    </div>
+    <!-- Positioning -->
+    <div id="position">
+        <h2>Positioning</h2>
+        <!--Position-->
+        <p><span class="property">Position</span> property specifies position of an element in the following three ways:</p>
+        <ul class="indent">
+            <li><strong>relative</strong>: position is relative to the element's defualt position with <strong>top/bottom/right/left</strong> properties following it (value in px) and measured in em, px or %</li>
+            <li><strong>static</strong>: default position of the element</li>
+            <li><strong>absolute</strong>: positions element within and relative to its ancestor element (e.g. div)</li>
+            <li><strong>fixed</strong>: element will not move on a page (good for headers). <strong>top/bottom/right/left</strong> property can be used to position fixed element as well</li>
+        </ul>
+
+        <p>See header and side bar for examples of fixed, absolute and relative position property</p>
+        <div class="ancestor">Ancestor element: relative position
+            <div class="absolute">Child element: absolute position</div>
+        </div>
+        <!--Z-index-->
+        <p><span class="property">Z-index</span> property controls how far back or forward overlapping elements with <strong>relative</strong> <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">positionining</a> should appear using integer values (e.g. -2, -1, 2). An element with greater stack order is always in front of an element with a lower stack order. If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.</p>
+            <p class="top button">Top</p>
+            <p class="bottom button">Bottom</p>
+            <p class="QA"><span class="question">Question:</span> how do you make overlapping elements?<br><span class="question">Answer:</span></p>
+            
+        <!--Display-->
+        <p><span class="property">Display</span> property defines how an element is positioned on a page. The values for display property are as follows:</p>
+        <ul class="indent">
+            <li><strong>inline:</strong> default value; box that wraps close around element and can't be modified</li>
+            <li><strong>block:</strong> box that fills the entire or specified width of the page</li>
+            <li><strong>inline-block:</strong> allows elements to appear next to each other with height/width used to define the size</li>
+        </ul>
+        <p>Below is an example of <strong>inline-block</strong> display:</p>
+        <ul class="center">
+            <li class="button">Block A</li>
+            <li class="button">Block B</li>
+            <li class="button">Block C</li>
+        </ul>
+        <p>To get rid of space between inline-block items, put all blocks on the same code line or use "font-size: 0;" in the parent element.</p> 
+        <div class="center">
+            <div class="blue"></div><div class="green"></div><div class="yellow"></div>
+        </div>
+        <p class="QA"><span class="question">Question:</span> how do you make inline-block centered on a page?<br><span class="question">Answer:</span> by using <strong>{margin: 0 auto;}</strong> declaration</p>
+        <!-- Float -->
+        <p><span class="property">Float</span> property moves the element or far left or right with <strong>left and right</strong> values. Below are examples of right and left float.</p>
+        <p class="button right">Right Float</p>
+        <p class="button left">Left Float</p>
+        <p style="position: relative; top: 40px;">NOTE: When float propety is used, other elements will move in to take up the space around the floated element.</p>
+        <p class="clear QA"><span class="question">Question:</span> how can move paragraph to next line after float property has been used for a preceding element?
+        <br><span class="question">Answer:</span> by using the <strong>clear</strong> property on the paragraph element.</p>
+        
+        <!-- Clear -->
+        <p><span class="property">Clear</span> property specifies n which sides of an element floating elements are not allowed to float. Values are as follows:</p>
+        <div class="center">
+            <ul class="indent">
+                <li class="small-button">left</li>
+                <li class="small-button">right</li>
+                <li class="small-button">both</li>
+                <li class="small-button">none</li>
+            </ul>
+        </div>
+        <!--Centering Elements-->
+        <h2>Centering Elements</h2>
+        <p><mark>The following methods can be used to center elements on a page:</mark></p>
+        <!--Resizing Elements-->
+        <h2>Relative Measurements</h2>
+        <p>Relative measurements allow for responsive design of a page so it looks good when browser window is made bigger or smaller. Relative measurements include the following</p>
+        <ul class="indent">
+            <li><span class="property">em</span> is an alternative unit of measurement to px and represents size of base font (e.g. base font is 12px so 2em = 24px). It is most useful for sizing elements compared to parent element.</li>
+            <li><span class="property">rem</span> is an alternative unit of measurement to px and represents size of base font of <strong>root</strong> element (i.e. html tag). It is most useful for sizing elements consistently across the entire website. To use rem, need to set font size for html element (i.e. <span class="code">html {font-fize: 16px;}</span>).</li>
+            <li><span class="property">percentages</span> are used to set width/height, padding, border and margins of an element relative to its parent element. Dimensions of the parent element need to be set first. Dimensions of the child element should not be 100% or it may overflow. Note: vertical padding and margin are calculated based on the <strong>width</strong> of the parent element.</li>
+            <li><span class="property">min-width</span> and <span class="property">max-width</span> ensure a minimum and maximum width for an element when a browser page is resized to allow for ease of reading. Measurement is in pixels.</li>
+            <li><span class="property">min-width</span> and <span class="property">max-width</span> ensure a minimum and maximum height for an element. Content might overflow outside the element.</li>
+        </ul>
+        <div class="sections">
+          <div class="css">.container {<br>
+                width: 50%;<br>
+                height: 200px;<br>
+                overflow: hidden;<br>
+              }<br>
+              <br>
+              .container img {<br>
+                max-width: 100%;<br>
+                height: auto;<br>
+                display: block;<br>
+              }
+            </div>
+            <p>It is also important to scale images and videos on a page so they show up with correct proportions. To the right is  a common example of how to set up images or videos on a web page.<br><br> NOTE: <strong>height: auto</strong> is used for correct scaling.</p>
+
+        </div>
+        <ul class="clear indent">
+        <li><span class="property">background</span> properties are used to style background images as provided in the example below. NOTE: <span class="code">{background-size: cover;}</span> will ensure that image covers the entire background of the element while keeping the image in proportion.</p>
+        </ul>   
+        <p class="css"> body {<br>
+                background-image: url('#');<br>
+                background-repeat: no-repeat;<br>
+                background-position: center;<br>
+                background-size: cover;<br>
+                }<br>
+        </p>
+        <!--Media Queries-->
+        <h2 class="clear">Media Queries</h2>
+        <p>Media queries are used to change website design when screen is resized using media features. Media features detect many aspects of a browser including:</p>
+        <ul class="indent">
+            <li>screen width and height</li>
+            <li>resoultion</li>
+            <li>orientation and more</li>
+        </ul>
+        <p>Operators <strong>and</strong> and <strong>or</strong> are used to indicate when all features or only one of the features needs to be used respectively. Media queries should be set at <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png" target="_blank">natural website breakpoints</a>.</p>
+        
+            <ul class="css-blocks center">
+            <li class="css">@media only screen and (min-width: 320px) and (max-width: 480px) {<br>
+                body {<br>
+                  font-size: 12px;<br>
+                }<br>
+              }</li>
+            <li class="css">@media only sreen and (max-width: 480px), (orientation: landscape) {<br>
+                h1 {<br>
+                    font-size: 4rem;<br>
+                    }<br>
+                }</li>
+            </ul>
+
+       
+        <br><br><br>
+</main>
+<footer>Made by Olga Mostovetsky 2020</footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CheatSheet</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="icon" href="/favicon/favicon-16x16.png" type="image/x-icon">   
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header">
+        <h1 id="top">Golden State UI Course 2020 <br>HTML CheatSheet</h1>
+        <p>This page lists key information on HTML from Golden State 2020 UI Class. See <a href="CSS.html" target="_blank">CSS page</a> for information on CSS.</p>
+        </div>
+        <!-- Elements Section-->
+        <h2>Elements</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Description</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>link</td>
+                        <td>Links to a new page or section in the same page</td>
+                        <td>{a href="link" target="_blank"*}link name{/a}</td>
+                    </tr>
+                    <tr>
+                        <td>span</td>
+                        <td>Allows to change formatting on <span style="color: red; font-weight: bold; ">just one section</span> of the text in a paragraph. Span element wraps the text and internal or external CSS is used to style it.</td>
+                        <td>{span style="color: red;"}Text{/span}</td>
+                    </tr>
+                    <tr>
+                        <td>mark</td>
+                        <td><mark>Highlights</mark> text within an element</td>
+                        <td>{mark}Text{/mark}</td>
+                    </tr>
+                    <tr>
+                        <td>Link</td>
+                        <td>Links to a new page or section in the same page</td>
+                        <td>{a href="link" target="_blank"*}link name{/a}</td>
+                    </tr>
+                    <tr>
+                        <td>Link</td>
+                        <td>Links to a new page or section in the same page</td>
+                        <td>{a href="link" target="_blank"*}link name{/a}</td>
+                    </tr>
+                    <tr>
+                        <td>Link</td>
+                        <td>Links to a new page or section in the same page</td>
+                        <td>{a href="link" target="_blank"*}link name{/a}</td>
+                    </tr>
+                    <tr>
+                        <td>Link</td>
+                        <td>Links to a new page or section in the same page</td>
+                        <td>{a href="link" target="_blank"*}link name{/a}</td>
+                    </tr>
+                    <tr>
+                        <td>Link</td>
+                        <td>Links to a new page or section in the same page</td>
+                        <td>{a href="link" target="_blank"*}link name{/a}</td>
+                    </tr>
+                </tbody>
+            </table>
+        <div id="Attributes">
+            <h2>Attributes</h2>
+            <p>Attributes give additional information or property to an element. Common examples are listed in the table below.</p>
+            <table>
+                <tr>
+                    <th>Element</th>
+                    <th>Attribute</th>
+                    <th>Description</th>
+                    <th>Code</th>        
+                </tr>
+                <tr>
+                    <td rowspan="2" class="center">Link</td>
+                    <td class="center">href</td>
+                    <td>provides the link</td>
+                    <td>href="link" or href="#id-name"</td>
+                </tr>
+                <tr>
+                    <td class="center">target</td>
+                    <td>opens link in a new tab</td>
+                    <td>target="_blank"</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Links">
+        <h2>Links</h2>
+            <p>Links are used to connect to another webpage and use <strong>a</strong> tags with <strong> href</strong> and <strong>target</strong>attributes. For example, <a href="https://sites.google.com/view/golden-state-tech/home?authuser=0" target="_blank">Golden State Student Portal</a>. <strong>target="_blank"</strong> allows the webpage to open in a new tab.</p>
+            <p>Links can also be used to nagivate to a section of the webpage using <strong>href="#id"</strong> in the <strong>a</strong> tags where <em>top</em> is an <strong>id</strong> attribute in the opening tag of the page element want to navigate to. For example, <a href="#top">click here</a> to go to the top of the page.</p>
+            <p>To link HTML to CSS page, use <strong>link</strong> self-closing element with the following attributes in the head of the HTML document:</p>
+            <ul style="list-style-type:square;">
+                <li>href="style.css"</li>
+                <li>type="text/css" </li>
+                <li>rel="stylesheet"</li>
+            </ul>
+        </div>
+        <h2>Pictures</h2>
+        <h2>Lists</h2>
+        <p>Lists can be ordered (od) or unordered (ud). To change bullets in the ordered list, use <strong>type</strong> attribute with the following values:</p>
+            <ol type="a">
+                <li>type="1"</li>
+                <li>type="A"</li>
+                <li>type="a"</li>
+                <li>type="I"</li>
+                <li>type="i"</li>
+            </ol>
+        <p>To change bullets in the unordered list, use <strong>style</strong> attribute with the following <strong>CSS</strong> values:</p>
+            <ul style="list-style-type:square;">
+                <li>style="list-style-type: disc;"</li>
+                <li>style="list-style-type: square;"</li>
+                <li>style="list-style-type: circle;"</li>
+                <li>style="list-style-type: none;"</li>
+            </ul>
+        <h2>Tables</h2>
+        <!--Digital Accessibility-->
+            <h2>Digital Accessbility</h2>
+            <p>Digital accessibility is web design that allows users with visual and other impairments to navigate the website. Digital accessibility includes the following:</p>
+            <ul class="indent">
+                <li><span class="property">Semantic Elements</span> involves using appropriate tags (e.g. <strong>header</strong> tag should include navigational elements such as a logo, links, or a search bar. Here is a list of existing <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">semantic elements</a>.</li>
+                <li><span class="property">ARIA role</span></li>
+                <li><mark>need to add others with links</mark></li>
+            </ul>
+            <p><strong>Screen readers</strong> (e.g. NVDA for Windows, ChromVox) translate webpage text to audio and allow visually impaired users to navigate the website</p>
+        <!--Font Awesome-->
+        <h2>Font Awesome</h2>
+        <p>Font Awesome is used to add icons to a webpage. There are two methods for adding Font Awesome by linking into HTML page in the head section:</p>
+        <ul>
+            <li>Link to external CDN, <a href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" target="_blank">Bootstrap CDN</a></li>
+            <li>Link downloaded local Font Awesome CSS file</li>
+        </ul>
+        <p>Linking is done the same way as any other CSS file using link element <br><span class="code">[link type="stylesheet" type="text/css" href="link to local file or Bootstrap CDN"]</span></p>
+        <p>Font Awesome icons are added to HTML page using [i] tag and fa-icon-name and fa classes<br> <span class="code">[i class="fa fa-save"][/i]</span> where fa-save is a type of icon. Use <a href="https://fontawesome.com/cheatsheet?from=io">Font Awesome Cheatsheet</a> for a list of icons and names.</p>
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-pinterest fa-lg"></i>
+        <p>Size of icons can be increased with additional classes:</p>
+        <ul>
+            <li>fa-lg: 33% increase</li>
+            <li>fa-2x: 2x increase</li>
+            <li>fa-3x: 3x increase</li>
+            <li>fa-4x: 4x increase</li>
+            <li>fa-5x: 5x increase</li>
+        </ul>
+        <span class="code">[i class="fa fa-facebook fa-2x"</span>
+        <!--Favicon-->
+        <h2>Favicons</h2>
+        <p>Favicon is a version of the logo made from a logo using a favicon maker (e.g. <a href="favicon-generator.org">favicon-generator.org)</a>. Image is converted to the favicon and then pasted in the root website directory with the following code added to the head section of html page.</p>
+        <span class="code">[link rel="icon" href="./<favicon-name>.ico" type="image/x-icon"]</span>
+            <p><mark>How do you actually add a favicon to the page???</mark></p>
+    </body>
+    <br><br><br><br><br><br><br>
+    
+
+    <footer>
+        <p>Made by OM</p>
+        <p>April 2020</p>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-pinterest"></i>
+    </footer>
+</html>
